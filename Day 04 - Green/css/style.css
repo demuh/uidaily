@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  direction: rtl; 
+}
+
+@font-face {
+  font-family: "shabnam";
+  src: url("../font/Shabnam-Light.ttf");
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #905c51 0%,#cb8971 40%,#d59278 100%); 
+  overflow: hidden;
+  font-family: shabnam;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 4rem 7rem;
+  max-height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.item {
+  background-color: white;
+  margin: 2%;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px 0px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item:hover {
+  transform: scale(1.05) skewY(-1deg);
+  box-shadow: rgb(0, 0, 0, 0.2) 1px 1px 10px 0px;
+}
+
+.item:nth-child(1) {
+  align-items: flex-end;
+  height: 470px;
+  width: 30%;
+  background: url(../img/unsplash1.jpg);
+}
+
+.item:nth-child(2) {
+  height: 470px;
+  width: 30%;
+  background: #d59277;
+  background: url(../img/unsplash2.jpg);
+}
+
+.item:nth-child(3) {
+  height: 470px;
+  width: 30%;
+  background: #98a4a0;
+  background: url(../img/unsplash3.jpg);
+}
+
+.item:nth-child(4) {
+  height: 470px;
+  width: 30%;
+  background: #d3b790;
+  background: url(../img/unsplash4.jpg);
+}
+
+.item:nth-child(5) {
+  height: 400px;
+  width: 30%;
+}
+
+.item:nth-child(6) {
+  height: 400px;
+  width: 30%;
+}
+
+img {
+  border-radius: 15px;
+}
