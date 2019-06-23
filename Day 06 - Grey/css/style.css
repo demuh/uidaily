@@ -1,0 +1,108 @@
+* { 
+    margin: 0;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #1c1c1c;
+    direction: rtl;
+    font-family: Shabnam;
+    color:#a9a9a9;
+}
+@font-face {
+    font-family: "shabnam";
+    src: url("../font/Shabnam-Light.ttf");
+}
+a {
+    text-decoration: none;
+}
+.header {
+    margin: 0;
+    background-color: #262626;
+
+}
+.header ul {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+}
+.header a {
+    color:#a9a9a9;
+    font-size : 25px;
+    font-weight: bold;
+}
+.header a:hover {
+    padding-bottom: 14px;
+    border-bottom: 3px solid red; /* or whatever colour you'd prefer */
+}
+
+@media screen and (max-width: 678px){
+    .header ul {
+        display: none;
+    }
+}
+.main {
+    margin: 0 auto;
+    padding: 30px;
+}
+.main h1 {
+    font-weight: normal;
+    padding-right: 30px;
+    color: #a9a9a9
+}
+.container {
+    display: flex;
+    font-size: 30px;
+}
+.time {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #262626;
+}
+.program {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #262626;
+    color: #a9a9a9;
+}
+
+.footer {
+    margin-bottom: 0;
+    background-color: #262626;
+
+}
+.footer li {
+    display: inline-block;
+    padding: 1rem;
+}
+.footer a {
+    color:#a9a9a9;
+    font-size : 25px;
+    font-weight: bold;
+}
+.footer a:hover {
+    border-bottom: 3px solid red; /* or whatever colour you'd prefer */
+}
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.right {
+    text-align: right;
+    padding-right:50px;
+    padding-bottom:20px;
+
+}
+.left {
+    text-align: left;
+    padding-left:50px;
+    padding-bottom:20px;
+
+}
