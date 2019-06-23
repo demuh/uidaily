@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>مدیریت</title>
+</head>
+<body>
+    <div class="admin">
+        <header class="admin__header">
+          <a href="#" class="logo">
+            <h1>مدیریت</h1>
+          </a>
+          <div class="toolbar">
+            <a href="#" class="top-nav-link">ارسال مطلب</a>
+            <a href="#" class="top-nav-link">نوشته‌ها</a>
+            <a href="#" class="top-nav-link">نمایه</a>
+          </div>
+        </header>
+        <nav class="admin__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">مطالب</a>
+              <div class="dropdown">
+                <a class="menu_link" href="#">افزودن</a>
+                <a class="menu_link" href="#">مدیریت مطالب</a>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">موضوعات</a>
+              <div class="dropdown">
+                <a class="menu_link" href="http://localhost:8000/admin/categories">افزودن</a>
+                <a class="menu_link" href="http://localhost:8000/admin/categories">مدیریت موضوعات</a>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">نظرات</a>
+              <div class="dropdown">
+                <a class="menu_link" href="#">افزودن</a>
+                <a class="menu_link" href="#">مدیریت نظرات</a>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">تنظیمات</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">خروج</a>
+            </li>
+          </ul>
+        </nav>
+        <main class="admin__main">
+          <h2 class="dash-main-title">مدیریت</h2>
+          <div class="dashboard">
+            <div class="dashboard__item">
+              <div class="card">
+                <span>تعداد نوشته‌ها:</span>
+                <strong>٠</strong>
+              </div>
+            </div>
+            <div class="dashboard__item">
+              <div class="card">
+              <span>تعداد نظرات:</span>
+                <strong>٠</strong>
+              </div>
+            </div>
+            <div class="dashboard__item dashboard__item--full">
+              <div class="card" style="text-align:center">
+                محتوا این‌جا قرار می‌گیرد
+              </div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">الف</div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">ب</div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">پ</div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">ت</div>
+            </div>
+          </div>
+
+        </main>
+        
+      </div>
+
+</body>
+<script>
+var dropdown = document.getElementsByClassName("menu__link");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      dropdownContent.style.opacity = "0";
+    } else {
+      dropdownContent.style.display = "block";
+      dropdownContent.style.opacity = "1";
+    }
+  });
+}  
+</script>
+</html>
